@@ -1,0 +1,84 @@
+lliurex-freeradius (0.3.4) xenial; urgency=high
+
+  * Updated banner 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 30 Jul 2018 10:32:41 +0200
+
+lliurex-freeradius (0.3.3) xenial; urgency=medium
+
+  * Updated categorization in zero-center
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 27 Apr 2018 13:52:04 +0200
+
+lliurex-freeradius (0.3.2) xenial; urgency=high
+
+  * Updated valencian translation
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 06 Sep 2017 12:54:58 +0200
+
+lliurex-freeradius (0.3.1) xenial; urgency=high
+
+  * Setting internal values properly when initializing the service
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 14 Aug 2017 09:33:20 +0200
+
+lliurex-freeradius (0.3) xenial; urgency=high
+
+  * New GUI supporting group filtering
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 10 Aug 2017 14:46:18 +0200
+
+lliurex-freeradius (0.2.54) xenial; urgency=medium
+
+  * Updated translations
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 15 May 2017 15:02:35 +0200
+
+lliurex-freeradius (0.2.53) xenial; urgency=medium
+
+  * Added metainfo
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 11 May 2017 12:48:20 +0200
+
+lliurex-freeradius (0.2.52) xenial; urgency=medium
+
+  * Add desktop file
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 09 Feb 2017 08:47:34 +0100
+
+lliurex-freeradius (0.2.51) xenial; urgency=high
+
+  * Change dialog GTK fo WiFi Router IP 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 07 Nov 2016 17:11:54 +0100
+
+lliurex-freeradius (0.2.5) xenial; urgency=high
+
+  * Add posibility external Router IP
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 07 Nov 2016 13:02:07 +0100
+
+lliurex-freeradius (0.2.4) xenial; urgency=medium
+
+  * First release to xenial
+  * Fixed require version of Gtk (lliurex-freeradius)
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 18 Feb 2016 11:44:39 +0100
+
+lliurex-freeradius (0.2.1) trusty; urgency=high
+
+  * Fixed n4d class name
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 22 Sep 2015 12:28:19 +0200
+
+lliurex-freeradius (0.2) trusty; urgency=high
+
+  * Added llum tutorial image
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 22 Sep 2015 11:29:37 +0200
+
+lliurex-freeradius (0.1) trusty; urgency=medium
+
+  * Initial release. 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 14 Sep 2015 15:55:58 +0200

@@ -1,0 +1,15 @@
+Source: lliurex-freeradius
+Section: admin
+Priority: extra
+Maintainer: Hector Garcia Huerta <lliurex_devel1@edu.gva.es>
+Build-Depends: debhelper (>= 8.0.0), zero-dev, llxsrchelper
+Standards-Version: 3.9.5
+Homepage: http://www.lliurex.net
+
+Package: lliurex-freeradius
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3
+Description: GUI to initialize freeradius service
+ GUI to initialize freeradius service. Remote machine
+ must have n4d-freeradius installed.
+ 
