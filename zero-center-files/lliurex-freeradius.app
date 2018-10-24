@@ -1,0 +1,11 @@
+Name=lliurex-freeradius
+Name[en]=LliureX FreeRADIUS
+Name[es]=LliureX FreeRADIUS
+Name[qcv]=LliureX FreeRADIUS
+Comment=Configures LliureX FreeRADIUS
+Comment[es]=Configura LliureX FreeRADIUS
+Comment[qcv]=Configura LliureX FreeRADIUS
+Icon=lliurex-freeradius
+Groups=admins;adm
+Category=Services
+ScriptPath=lliurex-freeradius.zmd

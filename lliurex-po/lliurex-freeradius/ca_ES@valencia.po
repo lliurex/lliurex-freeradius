@@ -1,0 +1,172 @@
+# Catalan translations for PACKAGE package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# lliurex <lliurex@lliurex>, 2017.
+# Pilar Embid Giner <embid_mar@gva.es>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-10 11:47+0200\n"
+"PO-Revision-Date: 2017-09-05 08:47+0200\n"
+"Last-Translator: Pilar Embid Giner <embid_mar@gva.es>\n"
+"Language-Team: LliureX\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:19
+msgid "Enable filtering"
+msgstr "Habilita el filtratge"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:40
+msgid "Back to initialization"
+msgstr "Torna a inicialització"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:91
+msgid "Available groups"
+msgstr "Grups disponibles"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:103
+msgid "Allowed groups"
+msgstr "Grups permesos"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:233
+msgid "Force EAP protocol"
+msgstr "Imposa el protocol EAP"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:277
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:683
+msgid "LliureX FreeRadius"
+msgstr "LliureX FreeRadius"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:310
+msgid "Open Llum"
+msgstr "Obri el Llum"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:326
+msgid "You can set 'roadmin' password using Llum"
+msgstr "Podeu posar la contrasenya 'roadmin' utilitzant el Llum"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:356
+msgid "Back to Group Management"
+msgstr "Torna a Gestió de grups"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:402
+msgid "Radius server"
+msgstr "Servidor de Radius"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:414
+msgid "Radius password"
+msgstr "Contrasenya de Radius"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:448
+msgid "Initialize"
+msgstr "Inicialitza"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:464
+msgid "Re-enter Radius Password"
+msgstr "Torna a introduir la contrasenya de Radius"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:488
+msgid "Router IP (Optional)"
+msgstr "IP de l'encaminador (opcional)"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:511
+msgid "LDAP Password"
+msgstr "Contrasenya d'LDAP"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:535
+msgid "LDAP User"
+msgstr "Usuari d'LDAP"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:617
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:204
+msgid "Login"
+msgstr "Accés"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:633
+msgid "Username"
+msgstr "Usuari"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:646
+msgid "Password"
+msgstr "Contrasenya"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:659
+msgid "Server IP (Default: server)"
+msgstr "IP del servidor (per defecte: server)"
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:210
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:220
+msgid "Groups"
+msgstr "Grups"
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:271
+#, python-format
+msgid "EAP Authentication protocol is %s"
+msgstr "El protocol d'autenticació EAP està %s"
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:271
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:290
+msgid "enabled"
+msgstr "habilitat"
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:271
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:290
+msgid "disabled"
+msgstr "inhabilitat"
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:290
+#, python-format
+msgid "Group filtering is %s"
+msgstr "El filtratge de grups està %s"
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:311
+#, python-format
+msgid "%s groups have been added to the 'Allowed groups' list"
+msgstr "%s grups s'han afegit a la llista de 'Grups permesos'"
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:335
+#, python-format
+msgid "%s groups have been removed from the 'Allowed groups' list"
+msgstr "%s grups s'han suprimit de la llista de 'Grups permesos'"
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:367
+msgid "Radius server entry field is empty"
+msgstr "El camp de servidor de Radius és buit."
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:370
+msgid "Radius password entry field is empty"
+msgstr "El camp de contrasenya de Radius és buit."
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:373
+msgid "LDAP user entry field is empty"
+msgstr "El camp d'usuari d'LDAP és buit."
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:376
+msgid "LDAP password entry field is empty"
+msgstr "El camp de contrasenya d'LDAP és buit."
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:379
+msgid "Radius passwords do not match"
+msgstr "Les contrasenyes de Radius no coincideixen."
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:415
+msgid "Initialization"
+msgstr "Inicialització"
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:425
+msgid "Groups Management"
+msgstr "Gestió de grups"
+
+#: ../install/usr/share/lliurex-freeradius/N4dManager.py:57
+msgid "User not allowed to run this application"
+msgstr "L'usuari no té permisos per a utilitzar aquesta aplicació. "
+
+#: ../install/usr/share/lliurex-freeradius/N4dManager.py:59
+msgid "User or Password error"
+msgstr "L'usuari i/o contrasenya no són vàlids."

@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-10 11:47+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:19
+msgid "Enable filtering"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:40
+msgid "Back to initialization"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:91
+msgid "Available groups"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:103
+msgid "Allowed groups"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:233
+msgid "Force EAP protocol"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:277
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:683
+msgid "LliureX FreeRadius"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:310
+msgid "Open Llum"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:326
+msgid "You can set 'roadmin' password using Llum"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:356
+msgid "Back to Group Management"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:402
+msgid "Radius server"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:414
+msgid "Radius password"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:448
+msgid "Initialize"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:464
+msgid "Re-enter Radius Password"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:488
+msgid "Router IP (Optional)"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:511
+msgid "LDAP Password"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:535
+msgid "LDAP User"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:617
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:204
+msgid "Login"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:633
+msgid "Username"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:646
+msgid "Password"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/rsrc/lliurex-freeradius.ui:659
+msgid "Server IP (Default: server)"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:210
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:220
+msgid "Groups"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:271
+#, python-format
+msgid "EAP Authentication protocol is %s"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:271
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:290
+msgid "enabled"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:271
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:290
+msgid "disabled"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:290
+#, python-format
+msgid "Group filtering is %s"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:311
+#, python-format
+msgid "%s groups have been added to the 'Allowed groups' list"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:335
+#, python-format
+msgid "%s groups have been removed from the 'Allowed groups' list"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:367
+msgid "Radius server entry field is empty"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:370
+msgid "Radius password entry field is empty"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:373
+msgid "LDAP user entry field is empty"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:376
+msgid "LDAP password entry field is empty"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:379
+msgid "Radius passwords do not match"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:415
+msgid "Initialization"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/LliurexFreeradius.py:425
+msgid "Groups Management"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/N4dManager.py:57
+msgid "User not allowed to run this application"
+msgstr ""
+
+#: ../install/usr/share/lliurex-freeradius/N4dManager.py:59
+msgid "User or Password error"
+msgstr ""

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=lliurex-freeradius
+Name[en]=LliureX FreeRADIUS
+Name[es]=LliureX FreeRADIUS
+Name[qcv]=LliureX FreeRADIUS
+Comment=Configures LliureX FreeRADIUS
+Comment[es]=Configura LliureX FreeRADIUS
+Comment[qcv]=Configura LliureX FreeRADIUS
+Exec=lliurex-freeradius
+Terminal=false
+Icon=lliurex-freeradius
+Type=Application
+GenericName=lliurex-freeradius
+NoDisplay=true
+Categories=Network;

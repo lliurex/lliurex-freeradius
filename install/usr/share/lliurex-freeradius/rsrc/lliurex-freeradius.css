@@ -1,0 +1,51 @@
+
+#WHITE_BACKGROUND
+{
+		
+	background-color: 	rgba(255,255,255,1);
+			
+}
+
+
+#LIGHT_BLUE
+{
+	background-color: 	rgba(43,90,133,1);
+	/*
+	background-color: 	rgba(53,110,161,1);
+	*/
+}
+
+
+/*
+#BLACK
+{
+	background-color:	rgba(89,108,126,0.3);
+}
+*/
+
+
+
+#STACK_LABEL
+{
+	color:	white;
+	font:		Noto Sans bold 12;
+}
+
+#REGULAR_LABEL
+{
+	color:	white;
+	font:		Ubuntu 10;
+}
+
+#REGULAR_LABEL_DISABLED
+{
+	color:	rgba(150,150,150,0.5);
+	font:		Noto Sans 10;
+}
+
+
+#INIT_LABEL
+{
+	color:	white;
+	font:		Noto Sans 11;
+}

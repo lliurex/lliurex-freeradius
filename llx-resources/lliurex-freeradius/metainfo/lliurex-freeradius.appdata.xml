@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>lliurex-freeradius</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>lliurex-freeradius</name>
+<name xml:lang="en">LliureX FreeRADIUS</name>
+<name xml:lang="es">LliureX FreeRADIUS</name>
+<name xml:lang="qcv">LliureX FreeRADIUS</name>
+<summary>Configures LliureX FreeRADIUS</summary>
+<summary xml:lang="es">Configura LliureX FreeRADIUS</summary>
+<summary xml:lang="qcv">Configura LliureX FreeRADIUS</summary>
+<description>
+<p>Configures LliureX FreeRADIUS</p>
+<p xml:lang="es">Configura LliureX FreeRADIUS</p>
+<p xml:lang="qcv">Configura LliureX FreeRADIUS</p>
+</description>
+<categories>
+<category>Network</category>
+</categories>
+<icon type="stock">lliurex-freeradius</icon>
+<provides><binary>lliurex-freeradius</binary></provides>
+<keywords>
+<keyword>lliurex-freeradius</keyword>
+<keyword>LliureX</keyword>
+<keyword>FreeRADIUS</keyword>
+
+</keywords>
+<developer_name> </developer_name>
+</component>
