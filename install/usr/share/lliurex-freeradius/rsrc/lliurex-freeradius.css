@@ -28,24 +28,24 @@
 #STACK_LABEL
 {
 	color:	white;
-	font:		Noto Sans bold 12;
+	font:   12pt Noto Sans bold;
 }
 
 #REGULAR_LABEL
 {
 	color:	white;
-	font:		Ubuntu 10;
+	font:	10pt Ubuntu;
 }
 
 #REGULAR_LABEL_DISABLED
 {
 	color:	rgba(150,150,150,0.5);
-	font:		Noto Sans 10;
+	font:	10pt Noto Sans;
 }
 
 
 #INIT_LABEL
 {
 	color:	white;
-	font:		Noto Sans 11;
+	font:	11pt Noto Sans;
 }
