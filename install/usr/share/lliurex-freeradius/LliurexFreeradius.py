@@ -57,8 +57,9 @@ class LliurexFreeradius:
 		
 		self.window=builder.get_object("window")
 		self.main_box=builder.get_object("main_box")
-		self.stack_label_box=builder.get_object("stock_label_box")
+		self.stack_label_box=builder.get_object("stack_label_box")
 		self.stack_label=builder.get_object("stack_label")
+		self.stack_separator=builder.get_object("stack_separator")
 		self.close_button=builder.get_object("close_button")
 		self.msg_label_box=builder.get_object("msg_label_box")
 		self.msg_label=builder.get_object("msg_label")
@@ -72,7 +73,7 @@ class LliurexFreeradius:
 		# This should go to a different file
 		self.groups_box=builder.get_object("groups_box")
 		self.filter_box=builder.get_object("filter_box")
-		self.filter_frame=builder.get_object("filter_frame")
+		#self.filter_frame=builder.get_object("filter_frame")
 		self.enable_filtering_switch=builder.get_object("enable_filtering_switch")
 		self.eap_switch=builder.get_object("eap_switch")
 		self.allowed_groups_treeview=builder.get_object("allowed_groups_treeview")
@@ -85,7 +86,8 @@ class LliurexFreeradius:
 		groups_box_label3=builder.get_object("groups_box_label3")
 		groups_box_label4=builder.get_object("groups_box_label4")
 		
-		self.group_box_labels=[groups_box_label1,groups_box_label2,groups_box_label3,groups_box_label4]
+		self.group_box_labels=[groups_box_label1,groups_box_label4]
+		self.group_column_labels=[groups_box_label2,groups_box_label3]
 		
 		# ######################
 		
@@ -108,6 +110,7 @@ class LliurexFreeradius:
 		self.router_ip_entry=builder.get_object("router_ip_entry")
 		self.initialize_button=builder.get_object("initialize_button")
 		self.roadmin_help_button=builder.get_object("roadmin_help_button")
+		self.init_box_entrys=[self.radius_server_entry,self.radius_password_entry,self.radius_password_entry2,self.ldap_user_entry,self.ldap_password_entry,self.router_ip_entry]
 		
 		# ########
 
@@ -136,6 +139,9 @@ class LliurexFreeradius:
 		self.set_data()
 		
 		self.window.show_all()
+		self.stack_separator.hide()
+		self.back_to_initialization_button.hide()
+		self.group_button.hide()
 				
 		GObject.threads_init()
 		Gtk.main()
@@ -187,26 +193,37 @@ class LliurexFreeradius:
 		Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(),self.style_provider,Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
 		
 		self.window.set_name("WHITE_BACKGROUND")
+		'''
 		self.stack_label.set_name("STACK_LABEL")
 		self.msg_label.set_name("REGULAR_LABEL")
 		self.stack.set_name("LIGHT_BLUE")
+		'''
+		#self.msg_label_box.set_name("LIGHT_BLUE")
+		self.msg_label.set_name("MSG_LABEL")
 		
-		self.msg_label_box.set_name("LIGHT_BLUE")
-		self.stack_label_box.set_name("LIGHT_BLUE")
+		self.stack_label_box.set_name("HEADER-LABEL")
+		self.stack_separator.set_name("HEADER_SEPARATOR")
 				
+		self.user_entry.set_name("CUSTOM-ENTRY")
+		self.password_entry.set_name("CUSTOM-ENTRY")
+		self.server_entry.set_name("CUSTOM-ENTRY")
+
+		for entry in self.init_box_entrys:
+			entry.set_name("CUSTOM-ENTRY")
+
+		'''		
 		for label in self.group_box_labels:
 			label.set_name("REGULAR_LABEL")
-			
+		'''
 		for label in self.init_box_labels:
-			label.set_name("INIT_LABEL")
+			label.set_name("INFO-LABEL")
 		
 	#def set-css_info	
 	
 	
 	def set_data(self):
 	
-		self.stack_label.set_text(_("Login"))
-	
+		#self.stack_label.set_text(_("Login"))
 		self.available_groups_liststore=Gtk.ListStore(str)
 		self.available_groups_treeview.set_model(self.available_groups_liststore)
 		self.available_groups_treeview.get_selection().set_mode(Gtk.SelectionMode.MULTIPLE)
@@ -280,16 +297,22 @@ class LliurexFreeradius:
 	def set_filterbox_sensitive(self,state,ignore_msg_label=False):
 		
 		self.filter_box.set_sensitive(state)
-		self.filter_frame.set_sensitive(state)
+		#self.filter_frame.set_sensitive(state)
+		
 		if state:
 			self.filter_box.set_name("")
 			for label in self.group_box_labels[1:]:
-				label.set_name("REGULAR_LABEL")
+				label.set_name("INFO-LABEL")
+			for label in self.group_column_labels:
+				label.set_name("HEADER-COLUMN")	
 		else:
-			self.filter_box.set_name("BLACK")
+			#self.filter_box.set_name("BLACK")
 			for label in self.group_box_labels[1:]:
-				label.set_name("REGULAR_LABEL_DISABLED")
+				label.set_name("INFO-LABEL-DISABLED")
+			for label in self.group_column_labels:
+				label.set_name("INFO-LABEL-DISABLED")		
 		
+		self.group_box_labels[0].set_name("INFO-LABEL")
 		if not ignore_msg_label:
 			self.msg_label.set_text(_("Group filtering is %s")%(_("enabled") if state else _("disabled")))
 		
@@ -420,6 +443,9 @@ class LliurexFreeradius:
 		
 		self.msg_label.set_text("")
 		self.stack_label.set_text(_("Initialization"))
+		self.stack_separator.show()
+		self.back_to_initialization_button.hide()
+		self.group_button.show()
 		self.stack.set_visible_child_name("init_box")
 		self.window.queue_draw()
 		
@@ -430,6 +456,9 @@ class LliurexFreeradius:
 		
 		self.stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT)
 		self.stack_label.set_text(_("Groups Management"))
+		self.stack_separator.show()
+		self.back_to_initialization_button.show()
+		self.group_button.hide()
 		self.stack.set_visible_child_name("groups_box")
 		self.window.queue_draw()
 		
