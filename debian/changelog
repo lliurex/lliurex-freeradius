@@ -1,3 +1,9 @@
+lliurex-freeradius (0.3.15) bionic; urgency=medium
+
+  * Redesign of the gui to adapt it to the new style
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 15 Nov 2018 09:39:50 +0100
+
 lliurex-freeradius (0.3.14) bionic; urgency=medium
 
   * Initial release for bionic
