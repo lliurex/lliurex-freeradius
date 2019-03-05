@@ -6,6 +6,6 @@ Comment=Configures LliureX FreeRADIUS
 Comment[es]=Configura LliureX FreeRADIUS
 Comment[qcv]=Configura LliureX FreeRADIUS
 Icon=lliurex-freeradius
-Groups=admins;adm
+Groups=admins;sudo
 Category=Services
 ScriptPath=lliurex-freeradius.zmd
