@@ -1,3 +1,9 @@
+lliurex-freeradius (0.3.16) bionic; urgency=medium
+
+  * Changed adm group to sudo
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 05 Mar 2019 17:58:06 +0100
+
 lliurex-freeradius (0.3.15) bionic; urgency=medium
 
   * Redesign of the gui to adapt it to the new style
