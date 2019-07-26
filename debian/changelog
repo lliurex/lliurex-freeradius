@@ -1,3 +1,9 @@
+lliurex-freeradius (0.3.19) bionic; urgency=medium
+
+  * Adding ca@valencia
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 26 Jul 2019 11:24:43 +0200
+
 lliurex-freeradius (0.3.18) bionic; urgency=medium
 
   * Fixed login window
