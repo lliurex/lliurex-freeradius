@@ -86,6 +86,8 @@ class LliurexFreeradius:
 		groups_box_label3=builder.get_object("groups_box_label3")
 		groups_box_label4=builder.get_object("groups_box_label4")
 		
+		self.eap_box=builder.get_object("box9")
+		
 		self.group_box_labels=[groups_box_label1,groups_box_label4]
 		self.group_column_labels=[groups_box_label2,groups_box_label3]
 		
@@ -139,6 +141,7 @@ class LliurexFreeradius:
 		self.set_data()
 		
 		self.window.show_all()
+		self.eap_box.hide()
 		self.stack_separator.hide()
 		self.back_to_initialization_button.hide()
 		self.group_button.hide()
