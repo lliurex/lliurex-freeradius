@@ -1,3 +1,9 @@
+lliurex-freeradius (0.3.20) bionic; urgency=medium
+
+  * hiding eap configuration
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 06 Sep 2019 10:13:11 +0200
+
 lliurex-freeradius (0.3.19) bionic; urgency=medium
 
   * Adding ca@valencia
