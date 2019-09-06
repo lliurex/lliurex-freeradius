@@ -199,7 +199,6 @@
         </child>
         <child>
           <object class="GtkBox" id="box9">
-            <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="margin_bottom">5</property>
             <child>
