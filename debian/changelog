@@ -1,3 +1,9 @@
+lliurex-freeradius (0.3.21) focal; urgency=medium
+
+  * Focal port
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 22 Apr 2021 15:11:45 +0200
+
 lliurex-freeradius (0.3.21) bionic; urgency=medium
 
   * hiding eap configuration

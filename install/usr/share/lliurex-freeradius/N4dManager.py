@@ -1,5 +1,4 @@
-import xmlrpc.client
-import ssl
+from n4d.client import Client
 import grp
 
 import gettext
@@ -30,10 +29,8 @@ class N4dManager:
 	
 	
 	def set_server(self,server):
-		
-		context=ssl._create_unverified_context()
-		self.n4d=xmlrpc.client.ServerProxy("https://%s:9779"%server,allow_none=True,context=context)
-		
+		self.n4d_server = "https://%s:9779"%server
+		self.n4d = Client(self.n4d_server)
 	#def set_server
 
 	
@@ -43,8 +40,8 @@ class N4dManager:
 		groups=["adm","admins"]
 		
 		try:
-		
-			ret,ret_groups=self.n4d.validate_user(user,password)
+			self.n4d = Client(self.n4d_server,user=user,password=password)
+			ret,ret_groups=self.n4d.validate_user()
 			
 			if ret:
 				for g in groups:
@@ -70,7 +67,7 @@ class N4dManager:
 		self.dprint("Is configured query...")
 		
 		try:
-			self.configured=self.n4d.is_configured("","FreeRadiusManager")
+			self.configured=self.n4d.FreeRadiusManager.is_configured()
 			return self.configured
 		except Exception as e:
 			self.dprint(e)
@@ -100,9 +97,9 @@ class N4dManager:
 		self.dprint("Get allowed groups...")
 		
 		try:
-			ret=self.n4d.get_allowed_groups(self.user_info,"FreeRadiusManager")
-			if ret["status"]:
-				self.allowed_groups=ret["msg"]
+			ret=self.n4d.FreeRadiusManager.get_allowed_groups()
+			if ret:
+				self.allowed_groups=ret
 				
 		except Exception as e:
 			self.dprint(e)
@@ -117,7 +114,7 @@ class N4dManager:
 		self.dprint("Is filter enabled query...")
 		
 		try:
-			variable=self.n4d.get_variable("","VariablesManager","FREERADIUS")
+			variable=self.n4d.get_variable("FREERADIUS")
 			return variable["groups_filter"]["enabled"]
 		except Exception as e:
 			self.dprint(e)
@@ -131,7 +128,7 @@ class N4dManager:
 		self.dprint("Is EAP enabled query...")
 		
 		try:
-			variable=self.n4d.get_variable("","VariablesManager","FREERADIUS")
+			variable=self.n4d.get_variable("FREERADIUS")
 			if variable["groups_filter"]["default_auth"]!=None:
 				return True
 			return False
@@ -152,7 +149,7 @@ class N4dManager:
 		ret["filter"]=False
 		
 		try:
-			variable=self.n4d.get_variable("","VariablesManager","FREERADIUS")
+			variable=self.n4d.get_variable("FREERADIUS")
 			ret["filter"]=variable["groups_filter"]["enabled"]
 			if variable["groups_filter"]["default_auth"]!=None:
 				ret["eap"]=True
@@ -175,7 +172,7 @@ class N4dManager:
 			
 		try:
 			
-			self.n4d.set_filter_default_auth(self.user_info,"FreeRadiusManager",auth_type)
+			self.n4d.FreeRadiusManager.set_filter_default_auth(auth_type)
 			
 		except Exception as e:
 			self.dprint(e)
@@ -199,7 +196,7 @@ class N4dManager:
 		self.dprint("Enable group filtering...")
 		
 		try:
-			return self.n4d.enable_group_filtering(self.user_info,"FreeRadiusManager")
+			return self.n4d.FreeRadiusManager.enable_group_filtering()
 		except Exception as e:
 			self.dprint(e)
 			return {"status":False,"msg":str(e)}
@@ -212,7 +209,7 @@ class N4dManager:
 		self.dprint("Disable group filtering...")
 		
 		try:
-			return self.n4d.disable_group_filtering(self.user_info,"FreeRadiusManager")
+			return self.n4d.FreeRadiusManager.disable_group_filtering()
 		except Exception as e:
 			self.dprint(e)
 			return {"status":False,"msg":str(e)}
@@ -225,7 +222,7 @@ class N4dManager:
 		self.dprint("Adding %s to filter..."%group)
 				
 		try:
-			return self.n4d.add_group_to_filter(self.user_info,"FreeRadiusManager",group)	
+			return self.n4d.FreeRadiusManager.add_group_to_filter(group)	
 		except Exception as e:
 			self.dprint(e)
 			return {"status":False,"msg":str(e)}
@@ -237,7 +234,7 @@ class N4dManager:
 		self.dprint("Removing %s from filter..."%group)
 		
 		try:
-			return self.n4d.remove_group_from_filter(self.user_info,"FreeRadiusManager",group)	
+			return self.n4d.FreeRadiusManager.remove_group_from_filter(group)	
 		except Exception as e:
 			self.dprint(e)
 			return {"status":False,"msg":str(e)}
@@ -250,13 +247,13 @@ class N4dManager:
 		self.dprint("Initializing...")
 		
 		try:
-			ret=self.n4d.install_conf_files(self.user_info,"FreeRadiusManager",data["radius_server"],data["radius_password"],data["ldap_user"],data["ldap_password"],data["router_ip"])
-			if ret["status"]:
+			ret=self.n4d.FreeRadiusManager.install_conf_files(data["radius_server"],data["radius_password"],data["ldap_user"],data["ldap_password"],data["router_ip"])
+			if ret:
 				self.configured=True
 				self.get_all_groups()
 				self.get_allowed_groups()
 			
-			return ret
+			return {"status":ret}
 		except Exception as e:
 			self.dprint(e)
 			return {"status":False,"msg":str(e)}
